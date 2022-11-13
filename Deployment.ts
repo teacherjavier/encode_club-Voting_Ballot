@@ -49,7 +49,7 @@ async function main() {
   const balanceBN2 = await signer2.getBalance();
   const balance2 = Number(ethers.utils.formatEther(balanceBN2));
   console.log(`Wallet2 balance ${balance2}`);
-  if (balance < 0.01) {
+  if (balance2 < 0.01) {
     throw new Error("Not enouth ether");
   }
 
@@ -58,7 +58,7 @@ async function main() {
   const balanceBN3 = await signer3.getBalance();
   const balance3 = Number(ethers.utils.formatEther(balanceBN3));
   console.log(`Wallet3 balance ${balance3}`);
-  if (balance < 0.01) {
+  if (balance3 < 0.01) {
     throw new Error("Not enouth ether");
   }
   //============================================
